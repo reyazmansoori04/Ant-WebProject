@@ -14,7 +14,7 @@ pipeline {
     
        stage ('git compile') {
         steps{
-  withAnt(jdk: 'LocalJDK') {
+withAnt(installation: 'LocalAnt', jdk: 'LocalJDK'){
    
                     sh 'ant compile'
                 }
