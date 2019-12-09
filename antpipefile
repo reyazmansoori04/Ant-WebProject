@@ -12,11 +12,11 @@ pipeline {
     
     }
     
-       stage ('git build') {
+       stage ('ant install') {
         steps{
 withAnt(installation: 'LocalAnt', jdk: 'LocalJDK'){
    
-                    sh 'ant build'
+                    sh 'ant install'
                 }
          }
     
