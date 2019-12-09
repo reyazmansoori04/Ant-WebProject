@@ -15,8 +15,8 @@ pipeline {
        stage ('ant install') {
         steps{
 withAnt(installation: 'LocalAnt', jdk: 'LocalJDK'){
-   
-                    sh 'ant install'
+  
+                    sh 'echo hi'
                 }
          }
     
